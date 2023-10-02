@@ -5,7 +5,7 @@ console.log("2" > 5);
 
 /*-----Comapring String and Boolean-------*/
 console.log("0" >= false);
-//Output: false (Here, the string value is getting change into number and then it is getting compared with the given boolean value false which is also getting change first into number i.e. 0)
+//Output: false (Here, the string value is getting change into number and then it is getting compared with the given boolean value false)
 
 
 /*-----Comapring Null and Number-------*/
