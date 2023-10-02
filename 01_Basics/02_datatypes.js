@@ -7,7 +7,7 @@
 /*
 In JavaScript, there are two main data types: primitive data types and objects. 
 The primitive data types include numbers, strings, booleans, null, and undefined. 
-Objects, on the other hand, are more complex data types and can hold multiple values in terms of properties and methods.
+Objects (Refrence datatype), on the other hand, are more complex data types and can hold multiple values in terms of properties and methods.
 
 Note:
 *Primitive Data Types:
@@ -38,7 +38,10 @@ They're 7 types of Primitive datatypes:
 6. Undefined => When variable is declared but doesn't initialized by any value and we'll try to log it then we'll get 'undefined'
 7. Symbol => Use to represent unique value.
 
-8. Object => Already defined above.
+Object or Refrence datatypes:
+8. Object => Already defined above
+9. Array => Basically it doesn't be the part of object datatype separately but I'm just writing here to have it's idea.
+10. Function => Same thing I'd say for this function also because it's not a datatype but it also work on refrence value like an object.
 
 */
 
