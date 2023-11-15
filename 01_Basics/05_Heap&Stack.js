@@ -17,6 +17,25 @@ A fixed amount of memory is allocated for static data. This process is known as 
 2. Heap - It is used to store objects and functions in JavaScript. 
 The engine doesn’t allocate a fixed amount of memory. Instead, it allocates more space as required.
 
+
+NOTE: In case of Stack -
+        const userName = "Reyan";
+        const userCopy = userName; (Here, we're giving the copy of the userName in the userCopy variable. It means if we change the userCopy's data then it won't effect the userName because if stores the copy of userName)
+
+        userCopy = "Danish";
+        console.log(userName);   //Output  : Reyan
+        console.log(userCopy);   //Output  : Danish
+        -----------------------------------------------------------------------
+    In case of Heap - 
+        const user = {                                  (Created an object with the name of user, the user variable will be store in stack memory and it's data i.e. object i.e. "name" and "email" will be store in heap memory and "user" word will point to the object)
+                name: "Kulsoom",
+                email: "kulsoom@xyz.com"
+        }
+
+        const anotherUser = user (Created another variable "anotherUser" which is also store in stack memory but it is also pointing to the object i.e. "name" and "email" in heap memory. If we'll change anotherUser data this time then user data will also get change because both are pointing to the same object in the heap memory.)
+        const anotherUser.email = "shiza@xyz.com"; (Changing the value of the object with the help of anotherUser and because of this user.email value will also get change)
+        console.log(user.email);         //Output - shiza@xyz.com
+        console.log(anotherUser.email);  //Output - shiza@xyz.com
 */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
