@@ -28,30 +28,30 @@ You can also create a string using the String constructor with the new keyword, 
 IMMUTABLE Nature
 Strings in JavaScript are immutable, meaning that once a string is created, its value cannot be changed. Any operation that appears to modify a string actually creates a new string.
 
-@String as Primitive Values:
+# tring as Primitive Values:
     In JavaScript, strings are primitive values, which means they are not objects. Primitives are stored directly in memory and have a fixed size.
 
-@Memory Allocation:
+# Memory Allocation:
     When a string is created, a certain amount of memory is allocated to store the characters of the string. Each character is assigned a specific position in memory.
 
-@No Direct Modification:
+# No Direct Modification:
     Immutability means that the value of a string cannot be changed directly. Unlike mutable data types (like arrays), where you can modify elements at specific indices, modifying a character within a string is not allowed.
         let myString = "Hello";
         myString[0] = "h"; // This operation is not allowed
     
-@Creating New Strings:
+# Creating New Strings:
     Any operation that appears to modify a string, such as concatenation or using string methods, actually creates a new string with the modified value.
         let originalString = "hello";
         let modifiedString = originalString.toUpperCase();
     In this case, originalString and modifiedString are two separate strings in memory.
 
-@String Pooling (Interning):
+# String Pooling (Interning):
     JavaScript engines often use a technique called "string pooling" or "string interning" to optimize memory usage. String pooling involves reusing existing strings with the same value rather than creating new ones.
         let str1 = "abc";
         let str2 = "abc";
     In this example, both str1 and str2 may refer to the same memory location because their values are the same. This helps reduce memory consumption.
 
-@Garbage Collection:
+# Garbage Collection:
     Since strings are immutable and new strings are created for modifications, old string values become eligible for garbage collection when they are no longer referenced. This process helps manage memory efficiently.
 
 
