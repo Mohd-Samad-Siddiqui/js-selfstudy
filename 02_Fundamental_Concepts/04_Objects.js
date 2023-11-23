@@ -48,4 +48,39 @@
                      console.log(obj3);                     //Output: {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
 
             In case of spread operator is doesn't modify any other object i.e. neither obj1 nor obj2.
+
+    
+        Object.keys(): Use to get all the keys of the object. Return type of it is array, which means it stores all the keys in arrays.
+        --------------
+
+        Example: let obj3 = {...obj1, ...obj2};
+                 let objectKeys = Object.keys(obj3);
+                 console.log(objectKeys);               //Output: ['1', '2', '3', '4']
+
+
+        Object.values(): Use to get all the values of the object similarly like Object.keys();
+        ----------------
+
+        Example: let obj3 = {...obj1, ...obj2};
+                 let objectKeys = Object.keys(obj3);
+                 console.log(objectKeys);               //Output: ['a', 'b', 'c', 'd']
+
+
+        hasOwnProperty(): hasOwnProperty is a method in JavaScript that is used to check if an object has a specific property as its 
+        ----------------- own property (not inherited from its prototype). It returns a boolean value indicating whether the object
+                          has the specified property.
+
+        Example: let myObject = { key1: 'value1', key2: 'value2' };
+                 
+                 // Check if myObject has the property 'key1'
+                 if (myObject.hasOwnProperty('key1')) {
+                    console.log('myObject has the property key1');
+                 } else {
+                    console.log('myObject does not have the property key1');
+                 }
+
+            In summary, hasOwnProperty is a handy method to make sure that a property exists directly on an object, 
+            reducing the risk of unintended behavior when working with object properties.
+}
+
 */
