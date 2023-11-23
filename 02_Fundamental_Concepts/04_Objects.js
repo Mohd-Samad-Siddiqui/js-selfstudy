@@ -81,6 +81,70 @@
 
             In summary, hasOwnProperty is a handy method to make sure that a property exists directly on an object, 
             reducing the risk of unintended behavior when working with object properties.
-}
+
+
+
+
+        Destructuring: Destructuring is a convenient way of creating new variables by extracting some values from 
+        -------------- data stored in objects or arrays.
+
+        Let's consider the following object for all the samples:
+
+            Example: const person = {
+                        firstName: "Nick",
+                        lastName: "Anderson",
+                        age: 35,
+                        sex: "M"
+                     }
+
+         //Without Destructuring
+                     const person = {
+                        firstName: "Nick",
+                        lastName: "Anderson",
+                        age: 35,
+                        sex: "M"
+                     }
+
+                     const first = person.firstName;
+                     const age = person.age;
+                     const city = person.city || "Paris";
+
+                     console.log(first)      // "Nick"
+                     console.log(age)        // 35
+                     console.log(city)       // "Paris" because person.city is undefined
+
+
+
+         //With destructuring, all in one line:
+                     const person = {
+                     firstName: "Nick",
+                     lastName: "Anderson",
+                     age: 35,
+                     sex: "M"
+                     }
+
+                     const { firstName: first, age, city = "Paris" } = person;   //Destrcuturing Syntax
+
+                     console.log(age)        // 35 -- A new variable age is created and is equal to person.age
+                     console.log(first)      // "Nick" -- A new variable first is created and is equal to person.firstName
+                     console.log(firstName)  // Undefined -- person.firstName exists BUT the new variable created is named first
+                     console.log(city)       // "Paris" -- A new variable city is created and since person.city is undefined, city 
+                                             // is equal to the default value provided "Paris".
+
+         Note : In const { age } = person, the brackets after const keyword are not used to declare an object nor a block but is the destructuring syntax.
+
+                  
+         //In destructuring the object parameter person, we get a more concise function:
+                     function joinFirstLastName({ firstName, lastName })  // we create firstName and lastName variables by destructuring person parameter
+                        return firstName + '-' + lastName;
+                     }
+
+                     const person = {
+                        firstName: "Nick",
+                        lastName: "Anderson",
+                        age: 35,
+                        sex: "M"
+                     }
+                     console.log(joinFirstLastName(person)); // "Nick-Anderson"
 
 */
