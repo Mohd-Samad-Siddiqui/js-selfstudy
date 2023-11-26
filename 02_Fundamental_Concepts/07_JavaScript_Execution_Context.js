@@ -4,7 +4,7 @@ It's all about understanding the working of javaScript. This lesson included ima
 for better understanding this topic.
 
 YouTube video = (Search) Chai aur Code JavaScript Execute Context 
-or copy this link = https://youtu.be/ByhtOgF6uYM?si=3BTduVMrUMDDfuOD
+YouTube link = https://youtu.be/ByhtOgF6uYM?si=3BTduVMrUMDDfuOD
 
 
 */
