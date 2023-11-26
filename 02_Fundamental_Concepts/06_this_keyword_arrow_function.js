@@ -73,5 +73,8 @@
                   Click to Remove Me!
                 </button>
 
+    6. Methods like call(), apply(), and bind(): Read W3Schools doc.
+       ----------------------------------------
+
 
 */
